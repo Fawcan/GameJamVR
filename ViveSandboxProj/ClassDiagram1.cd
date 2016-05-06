@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Bow" Collapsed="true">
+    <Position X="3" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAA4AQACIBMCABACAAICQACAAAAAMAEAAACCAKAEA=</HashCode>
+      <FileName>Assets\Scripts\GeneralVR\Bow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConstraintModule" Collapsed="true">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAAAAgACBAAAAAAQAgCAAAAAAQAAAAgCBAACAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ConstraintModules\ConstraintModule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConstraintSysCreator" Collapsed="true">
+    <Position X="9.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARAACAUACAAFUAEAEABAABsIgAJAAIAAAAAECAAEEg=</HashCode>
+      <FileName>Assets\Scripts\ConstraintSystem\ConstraintSysCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NodeAttachment" Collapsed="true">
+    <Position X="6.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAhASAAQQAAAAAAIAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\ConstraintSystem\NodeAttachment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NodeWing" Collapsed="true">
+    <Position X="7.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAIAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ConstraintSystem\NodeWing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Propellar" Collapsed="true">
+    <Position X="5.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAIAAA=</HashCode>
+      <FileName>Assets\Scripts\ConstraintSystem\Propellar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CtrlFaceMenuSystem" Collapsed="true">
+    <Position X="6.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARAAQABACAAAAAAgAAEAAAAAQAAgAABAAQAAAABAAA=</HashCode>
+      <FileName>Assets\Scripts\GeneralVR\CtrlFaceMenuSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HandInteractionBase&lt;T&gt;" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\GeneralVR\HandInterractionBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MergeableObject" Collapsed="true">
+    <Position X="5.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAMAkAgggACoAgAAAIQAAABBAIgAEAKAiICAAAEA=</HashCode>
+      <FileName>Assets\Scripts\GeneralVR\MergeableObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectGrabing" Collapsed="true">
+    <Position X="3.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EIQEAAEgAAABABIAAAAAwAAAAAAAAAAAABAASDBACEE=</HashCode>
+      <FileName>Assets\Scripts\GeneralVR\ObjectGrabing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectGrabingV2" Collapsed="true">
+    <Position X="7.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EIwFAAEgAAABABIAAAAAQAAEAAAAAAAAABAACDBAAEA=</HashCode>
+      <FileName>Assets\Scripts\GeneralVR\ObjectGrabingV2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectGun" Collapsed="true">
+    <Position X="2.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAACgAACBQAACACQAAAAAIAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Assets\Scripts\GeneralVR\ObjectGun.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PenetrationTarget" Collapsed="true">
+    <Position X="0.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwBAIABIAQABIEAAAIABBAAAAAAAABIAABAIQAAAAQ=</HashCode>
+      <FileName>Assets\Scripts\GeneralVR\PenetrationTarget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pickupable" Collapsed="true">
+    <Position X="1.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAgAADAAAgAAAABACAAAAAAAAAAAEBAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\GeneralVR\Pickupable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PickupGraber" Collapsed="true">
+    <Position X="10.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIYEAAAgACBAABAAAAAAwAAAQBAACEAAAAAAADAACEE=</HashCode>
+      <FileName>Assets\Scripts\GeneralVR\PickupGraber.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PickupGraberV2" Collapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIYFAAAgACAAABAAAAAAwAAAQAAACEAAAAAAADAACEE=</HashCode>
+      <FileName>Assets\Scripts\GeneralVR\PickupGraberV2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ValueIndicator" Collapsed="true">
+    <Position X="0.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\GeneralVR\Shared.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StopWatchIndicator" Collapsed="true">
+    <Position X="0.5" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAQAhAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\StopWatchIndicator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TargetBoard" Collapsed="true">
+    <Position X="0.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAIAAAAAAAAAABAAAAAAAIAAgAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\GeneralVR\TargetBoard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Teleporter" Collapsed="true">
+    <Position X="8.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQEAAQgACAAAAAgAAQiBAAEQAAABAAQtAEABgAAAMA=</HashCode>
+      <FileName>Assets\Scripts\GeneralVR\Teleporter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BowSteamVR" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ViveImp\BowSteamVR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConstrSysCreatorSteamVR" Collapsed="true">
+    <Position X="9.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAACAAAQAAAAAAAAAAAAAAIgAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Assets\Scripts\ViveImp\ConstrSysCreatorSteamVR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CtrlFaceMenuSteamVR" Collapsed="true">
+    <Position X="6.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAQAAAAAAgAAEAAAAAQAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ViveImp\CtrlFaceMenuSteamVR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectGrabingSteamVR" Collapsed="true">
+    <Position X="3.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAABAAABAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ViveImp\ObjectGrabingSteamVR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectGrabingV2SteamVR" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAABAAABAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ViveImp\ObjectGrabingV2SteamVR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectGunSteamVR" Collapsed="true">
+    <Position X="2.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAQAgAAIAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ViveImp\ObjectGunSteamVR.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PickupGraberSteamVR" Collapsed="true">
+    <Position X="10.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAQAAAAAAAAAAAAAAAAAAAEAAAAAAABAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ViveImp\PickupGraberSteamVR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PickupGraberV2SteamVR" Collapsed="true">
+    <Position X="10.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAQAAAAAAAAAAAAAAAAAAAEAAAAAAABAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ViveImp\PickupGraberV2SteamVR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeleporterSteamVR" Collapsed="true">
+    <Position X="8.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAACAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ViveImp\TeleporterSteamVR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VRMenuSteamVR" Collapsed="true">
+    <Position X="0.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAIAAAAAAAAAAABAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ViveImp\VRMenuSteamVR.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VRMenuSystem" Collapsed="true">
+    <Position X="0.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQAABABAAQAAAAIAAAAQAEAAAABAIABQBQAAAAAIEA=</HashCode>
+      <FileName>Assets\Scripts\GeneralVR\VRMenuSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SteamVR_Status" Collapsed="true">
+    <Position X="5.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAMAAAAAAACAAEAAAAAAAAQAAAAIAAAAAAAACCA=</HashCode>
+      <FileName>Assets\SteamVR\Scripts\SteamVR_Status.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SteamVR_StatusText" Collapsed="true">
+    <Position X="5.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\SteamVR\Scripts\SteamVR_StatusText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

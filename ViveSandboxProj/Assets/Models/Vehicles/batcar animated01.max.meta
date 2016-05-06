@@ -1,0 +1,258 @@
+fileFormatVersion: 2
+guid: 2603d1745621d7a45ad22fe0996f0a97
+timeCreated: 1458929553
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Arc01
+    100002: axis
+    100004: //RootNode
+    100006: batmobile
+    100008: cabine
+    100010: Camera01
+    100012: Camera01.Target
+    100014: cil L 01
+    100016: cil L 02
+    100018: cil L 03
+    100020: cil L 04
+    100022: cil L 05
+    100024: cil L 06
+    100026: cil R 01
+    100028: cil R 02
+    100030: cil R 03
+    100032: cil R 04
+    100034: cil R 05
+    100036: cil R 06
+    100038: combustion
+    100040: FDirect01
+    100042: front wheel L
+    100044: front wheel R
+    100046: Fspot01
+    100048: Fspot02
+    100050: Illustrate! Art Materials
+    100052: L light
+    100054: L light.Target
+    100056: monitor
+    100058: Omni01
+    100060: Omni02
+    100062: Omni03
+    100064: Omni04
+    100066: Omni05
+    100068: Omni06
+    100070: Omni07
+    100072: Omni08
+    100074: Omni09
+    100076: Omni10
+    100078: Omni11
+    100080: Plane01
+    100082: R light01
+    100084: R light01.Target
+    100086: rear wheel L
+    100088: rear wheel R
+    100090: Shape01
+    100092: Shape02
+    100094: Shape03
+    100096: Shape04
+    100098: Shape05
+    100100: Slider01
+    100102: Slider02
+    100104: steer
+    100106: steer wheel
+    100108: turbine
+    400000: Arc01
+    400002: axis
+    400004: //RootNode
+    400006: batmobile
+    400008: cabine
+    400010: Camera01
+    400012: Camera01.Target
+    400014: cil L 01
+    400016: cil L 02
+    400018: cil L 03
+    400020: cil L 04
+    400022: cil L 05
+    400024: cil L 06
+    400026: cil R 01
+    400028: cil R 02
+    400030: cil R 03
+    400032: cil R 04
+    400034: cil R 05
+    400036: cil R 06
+    400038: combustion
+    400040: FDirect01
+    400042: front wheel L
+    400044: front wheel R
+    400046: Fspot01
+    400048: Fspot02
+    400050: Illustrate! Art Materials
+    400052: L light
+    400054: L light.Target
+    400056: monitor
+    400058: Omni01
+    400060: Omni02
+    400062: Omni03
+    400064: Omni04
+    400066: Omni05
+    400068: Omni06
+    400070: Omni07
+    400072: Omni08
+    400074: Omni09
+    400076: Omni10
+    400078: Omni11
+    400080: Plane01
+    400082: R light01
+    400084: R light01.Target
+    400086: rear wheel L
+    400088: rear wheel R
+    400090: Shape01
+    400092: Shape02
+    400094: Shape03
+    400096: Shape04
+    400098: Shape05
+    400100: Slider01
+    400102: Slider02
+    400104: steer
+    400106: steer wheel
+    400108: turbine
+    2300000: axis
+    2300002: batmobile
+    2300004: cabine
+    2300006: cil L 01
+    2300008: cil L 02
+    2300010: cil L 03
+    2300012: cil L 04
+    2300014: cil L 05
+    2300016: cil L 06
+    2300018: cil R 01
+    2300020: cil R 02
+    2300022: cil R 03
+    2300024: cil R 04
+    2300026: cil R 05
+    2300028: cil R 06
+    2300030: combustion
+    2300032: front wheel L
+    2300034: front wheel R
+    2300036: monitor
+    2300038: Plane01
+    2300040: rear wheel L
+    2300042: rear wheel R
+    2300044: steer
+    2300046: steer wheel
+    2300048: turbine
+    3300000: axis
+    3300002: batmobile
+    3300004: cabine
+    3300006: cil L 01
+    3300008: cil L 02
+    3300010: cil L 03
+    3300012: cil L 04
+    3300014: cil L 05
+    3300016: cil L 06
+    3300018: cil R 01
+    3300020: cil R 02
+    3300022: cil R 03
+    3300024: cil R 04
+    3300026: cil R 05
+    3300028: cil R 06
+    3300030: combustion
+    3300032: front wheel L
+    3300034: front wheel R
+    3300036: monitor
+    3300038: Plane01
+    3300040: rear wheel L
+    3300042: rear wheel R
+    3300044: steer
+    3300046: steer wheel
+    3300048: turbine
+    4300000: batmobile
+    4300002: front wheel L
+    4300004: front wheel R
+    4300006: cil L 01
+    4300008: cil L 02
+    4300010: cil L 03
+    4300012: cil L 04
+    4300014: cil L 05
+    4300016: cil L 06
+    4300018: cil R 01
+    4300020: cil R 02
+    4300022: cil R 03
+    4300024: cil R 04
+    4300026: cil R 05
+    4300028: cil R 06
+    4300030: axis
+    4300032: steer
+    4300034: steer wheel
+    4300036: monitor
+    4300038: cabine
+    4300040: rear wheel L
+    4300042: rear wheel R
+    4300044: turbine
+    4300046: combustion
+    4300048: Plane01
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.002
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

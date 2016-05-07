@@ -17,6 +17,14 @@ public class ObjectSpawner : MonoBehaviour
     private Pickupable PickupablePrefab;
     [SerializeField]
     private bool SpawnPickupableInOrigo;
+    [SerializeField]
+    private int mNrOfSnowballs;
+
+    public int NrOfSnowballs
+    {
+        get { return mNrOfSnowballs; }
+        set { NrOfSnowballs = value; }
+    }
 
     void Start()
     { }
@@ -25,11 +33,18 @@ public class ObjectSpawner : MonoBehaviour
     {
         if (ObjectPrefab == null)
             return null;
-
-        if (SpawnObjectInOrigo)
-            return (Rigidbody)Instantiate(ObjectPrefab, grabberTrans.position, grabberTrans.rotation);
+        if (mNrOfSnowballs > 0)
+        {
+            if (SpawnObjectInOrigo)
+                return (Rigidbody)Instantiate(ObjectPrefab, grabberTrans.position, grabberTrans.rotation);
+            else
+                return (Rigidbody)Instantiate(ObjectPrefab, SpawnPoint.position, SpawnPoint.rotation);
+        }
         else
-            return (Rigidbody)Instantiate(ObjectPrefab, SpawnPoint.position, SpawnPoint.rotation);
+        {
+            Debug.Log("No snowballs left");
+            return null;
+        }
     }
     public Pickupable RequestPickupableInstance(Transform grabberTrans)
     {

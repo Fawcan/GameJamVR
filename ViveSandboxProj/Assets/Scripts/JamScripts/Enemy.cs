@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour {
 
     [SerializeField] private float mAttackTimer;
     [SerializeField] private bool mSnowmanInRange = false;
-    [SerializeField] private Snowman mSnowman;
+    [SerializeField] private GameObject mSnowman;
 
     public int EnemyHP
     {
@@ -37,6 +37,7 @@ public class Enemy : MonoBehaviour {
         mGoal = GameObject.FindGameObjectWithTag("Snowman").transform;
         mAgent.destination = mGoal.position;
         mAgent.speed = Speed;
+        mSnowman = GameObject.FindGameObjectWithTag("Snowman");
 	}
 	
     
@@ -52,7 +53,7 @@ public class Enemy : MonoBehaviour {
         
         if(mAttackTimer >= mDamageCD && mSnowmanInRange && EnemyHP > 0)
         {
-            DealDamage();
+            
         }       
 	}
 
@@ -65,33 +66,6 @@ public class Enemy : MonoBehaviour {
             Debug.Log("Collision with snowball");
             EnemyHP -= 1;
         }
-        if(other.transform.tag == "Snowman")
-        {
-            other.transform.GetComponent<Snowman>().TakeDamage(Damage);
-            DestroyObject(gameObject);
-        }
-
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-
-        if (other.tag == "Snowman")
-        {
-            mSnowmanInRange = true;
-        }
-    }
-
-    void OnTriggerExit (Collider other)
-    {
-        if(other.tag == "Snowman")
-        {
-            mSnowmanInRange = false; 
-        }
-    }
-
-    void DealDamage()
-    {
-        mSnowman.TakeDamage(Damage);
-    }
 }

@@ -7,7 +7,8 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] Snowman mSnowman;
     [SerializeField] Transform[] mSpawnPoints;
     [SerializeField] private float mSpawnCD = 5f;
-    [SerializeField] private int mNrOfEnemiesToSpawn;
+    [SerializeField] private int mNrOfEnemiesToSpawn = 8;
+    [SerializeField] private GameManager mManager;
 
     [SerializeField] private float mSpawnTimer = 0f;
 
@@ -35,6 +36,7 @@ public class EnemySpawner : MonoBehaviour
         {
             mSpawnTimer = 0f;
             mNrOfEnemiesToSpawn -= 1;
+            mManager.EnemiesLeft += 1;
 
             int mSpawnPointIndex = Random.Range(0, mSpawnPoints.Length);
 

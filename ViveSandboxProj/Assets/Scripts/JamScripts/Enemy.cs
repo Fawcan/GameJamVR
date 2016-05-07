@@ -13,6 +13,9 @@ public class Enemy : MonoBehaviour {
     [SerializeField] private bool mSnowmanInRange = false;
     [SerializeField] private GameObject mSnowman;
 
+
+    private GameManager mManager;
+
     public int EnemyHP
     {
         get { return mEnemyHP; }
@@ -38,6 +41,7 @@ public class Enemy : MonoBehaviour {
         mAgent.destination = mGoal.position;
         mAgent.speed = Speed;
         mSnowman = GameObject.FindGameObjectWithTag("Snowman");
+        mManager = GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>();
 	}
 	
     
@@ -46,6 +50,7 @@ public class Enemy : MonoBehaviour {
     {
 	    if(EnemyHP <= 0)
         {
+            mManager.EnemiesLeft -= 1;
             DestroyObject(gameObject);
         }
 

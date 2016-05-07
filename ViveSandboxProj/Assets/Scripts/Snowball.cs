@@ -16,7 +16,7 @@ public class Snowball : MonoBehaviour {
 
     void OnCollisionEnter(Collision other)
     {
-        if (other.transform.tag == "Enemy" || other.transform.tag == "Ground")
+        if (other.transform.tag != "Controller")
         {
             DestroyObject(gameObject);
         }

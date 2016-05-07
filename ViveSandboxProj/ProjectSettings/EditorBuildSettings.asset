@@ -10,6 +10,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Sandbox03 - Archery.unity
   - enabled: 0
-    path: Assets/Scenes/Sandbox00 - All.unity
+    path: Assets/Scenes/Snowball.unity
   - enabled: 1
     path: Assets/Scenes/TestScenes/AlbinTest.unity

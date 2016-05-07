@@ -11,6 +11,13 @@ public class EnemySpawner : MonoBehaviour
 
     [SerializeField] private float mSpawnTimer = 0f;
 
+
+    public int EnemiesToSpawn
+    {
+        get { return mNrOfEnemiesToSpawn; }
+        set { mNrOfEnemiesToSpawn = value; }
+    }
+
     // Update is called once per frame
 
     void Update()
@@ -37,3 +44,4 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 }
+

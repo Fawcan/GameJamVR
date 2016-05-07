@@ -12,4 +12,8 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Snowball.unity
   - enabled: 1
+<<<<<<< HEAD
+    path: Assets/Scenes/TestScenes/MariaTest.unity
+=======
     path: Assets/Scenes/TestScenes/AlbinTest.unity
+>>>>>>> cf5246e3e542490ffac01fed72a932c713927f65

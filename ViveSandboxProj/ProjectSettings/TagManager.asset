@@ -9,6 +9,7 @@ TagManager:
   - Ammo
   - Controller
   - Snowman
+  - Manager
   layers:
   - Default
   - TransparentFX

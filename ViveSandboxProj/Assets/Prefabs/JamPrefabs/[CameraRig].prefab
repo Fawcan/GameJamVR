@@ -157,9 +157,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 474296}
-  - 33: {fileID: 3377614}
   - 65: {fileID: 6501044}
-  - 23: {fileID: 2380156}
   - 54: {fileID: 5467800}
   - 114: {fileID: 11414106}
   - 114: {fileID: 11484646}
@@ -192,7 +190,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 143240}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.12, y: 1.04, z: -3.31}
+  m_LocalPosition: {x: -20.12, y: 1.04, z: -4.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 483528}
@@ -380,32 +378,6 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!23 &2380156
-MeshRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 190756}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_Materials:
-  - {fileID: 2100000, guid: de1640152c5218c43ac77d0acc1d28cf, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
 --- !u!33 &3373824
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -413,13 +385,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 143240}
   m_Mesh: {fileID: 0}
---- !u!33 &3377614
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 190756}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!54 &5467800
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -445,8 +410,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.1268752, y: 1.3530884, z: 1}
+  m_Center: {x: -0.08453409, y: 0.17654419, z: 0.000008218399}
 --- !u!81 &8115866
 AudioListener:
   m_ObjectHideFlags: 1
@@ -744,10 +709,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPoint: {fileID: 474296}
-  ObjectPrefab: {fileID: 5460596, guid: 4bda4ad8174c96040a5b32d57965af79, type: 2}
+  ObjectPrefab: {fileID: 5436538, guid: 4bda4ad8174c96040a5b32d57965af79, type: 2}
   SpawnObjectInOrigo: 1
   PickupablePrefab: {fileID: 0}
   SpawnPickupableInOrigo: 0
+  mNrOfSnowballs: 0
 --- !u!114 &11484818
 MonoBehaviour:
   m_ObjectHideFlags: 1

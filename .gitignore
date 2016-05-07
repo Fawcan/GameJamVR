@@ -1,36 +1,13 @@
-# =============== #
-# Unity generated #
-# =============== #
-[Tt]emp/
-[Oo]bj/
-[Bb]uild
-[Ll]ibrary/
-sysinfo.txt
-*.stackdump
- 
-# ===================================== #
-# Visual Studio / MonoDevelop generated #
-# ===================================== #
-[Ee]xported[Oo]bj/
-.vs/
-/*.userprefs
-/*.csproj
-/*.pidb
-/*.suo
-/*.sln*
-/*.user
-/*.unityproj
-/*.booproj
- 
-# ============ #
-# OS generated #
-# ============ #
-.DS_Store*
-._*
-.Spotlight-V100
-.Trashes
-Icon?
-ehthumbs.db
-[Tt]humbs.db
+ViveSandboxProj/Library/
+ViveSandboxProj/Temp/
+<<<<<<< HEAD
 *.csproj
-*.sln
+*.suo
+=======
+*.suo
+*.csproj
+<<<<<<< HEAD
+New Unity Project/Library/
+=======
+>>>>>>> 174a6aecae2517bf80ff34c10154fb37ba0d8363
+>>>>>>> d2db4fed7398b20a1128e98532e6f614c3754322

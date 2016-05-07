@@ -1,4 +1,9 @@
 ViveSandboxProj/Library/
 ViveSandboxProj/Temp/
+<<<<<<< HEAD
 *.csproj
 *.suo
+=======
+*.suo
+*.csproj
+>>>>>>> 174a6aecae2517bf80ff34c10154fb37ba0d8363

@@ -5,6 +5,7 @@ using System.Collections;
 
 public class Snowball : MonoBehaviour {
     [SerializeField] private Vector3 mSize;
+    [SerializeField] private int mSnowballSize = 1;
 
     [SerializeField] private int mDamage = 1;
 
@@ -18,13 +19,14 @@ public class Snowball : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-	
+	    
 	}
 
     void OnCollisionEnter(Collision other)
     {
         if(other.transform.tag == "Enemy")
         {
+            Debug.Log(other.transform.tag);
             other.transform.GetComponent<Enemy>().TakeDamage(mDamage);
             DestroyObject(gameObject);
         }
@@ -32,7 +34,11 @@ public class Snowball : MonoBehaviour {
 
     public void UpScale()
     {
-        mSize *= 2;
-        this.transform.localScale = mSize;
+        if (mSnowballSize < 4)
+        {
+            mSize *= 2;
+            this.transform.localScale = mSize;
+            mSnowballSize++;
+        }
     }
 }

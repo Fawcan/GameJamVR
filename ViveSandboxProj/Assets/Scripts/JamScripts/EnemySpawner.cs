@@ -12,6 +12,10 @@ public class EnemySpawner : MonoBehaviour
 
     [SerializeField] private float mSpawnTimer = 0f;
 
+    void Awake ()
+    {
+        mManager = GetComponent<GameManager>();
+    }
 
     public int EnemiesToSpawn
     {
@@ -24,6 +28,10 @@ public class EnemySpawner : MonoBehaviour
     void Update()
     {
         mSpawnTimer += Time.deltaTime;
+        if (mSpawnTimer >= mSpawnCD && mNrOfEnemiesToSpawn > 0)
+        {
+            Spawn();
+        }
     }
     void Spawn ()
     {
@@ -32,8 +40,7 @@ public class EnemySpawner : MonoBehaviour
             return;
         }
 
-        if (mSpawnTimer >= mSpawnCD && mNrOfEnemiesToSpawn > 0)
-        {
+
             mSpawnTimer = 0f;
             mNrOfEnemiesToSpawn -= 1;
             mManager.EnemiesLeft += 1;
@@ -43,7 +50,7 @@ public class EnemySpawner : MonoBehaviour
             Instantiate(mEnemy, mSpawnPoints[mSpawnPointIndex].position, mSpawnPoints[mSpawnPointIndex].rotation);
 
 
-        }
+        
     }
 }
 

@@ -48,7 +48,7 @@ public class Enemy : MonoBehaviour {
         mAgent.destination = mGoal.position;
         mAgent.speed = Speed;
         mSnowman = GameObject.FindGameObjectWithTag("Snowman");
-        //mManager = GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>();    
+        mManager = GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>();    
 	}
 	
     

@@ -8,6 +8,8 @@ using System.Collections;
 public class ObjectSpawner : MonoBehaviour
 {
     [SerializeField]
+    private LEDBar mLed;
+    [SerializeField]
     private Transform SpawnPoint;
     [SerializeField]
     private Rigidbody ObjectPrefab;
@@ -19,11 +21,21 @@ public class ObjectSpawner : MonoBehaviour
     private bool SpawnPickupableInOrigo;
     [SerializeField]
     private int mNrOfSnowballs;
+    [SerializeField] private int mMaxNrOfSnowballs = 20;
+
 
     public int NrOfSnowballs
     {
         get { return mNrOfSnowballs; }
         set { NrOfSnowballs = value; }
+    }
+
+    void Update()
+    {
+        if(mLed != null)
+        {
+            mLed.NormFillValue = mNrOfSnowballs / mMaxNrOfSnowballs;
+        }
     }
 
     void Start()

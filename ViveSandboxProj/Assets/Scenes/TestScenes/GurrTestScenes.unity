@@ -96,6 +96,7 @@ GameObject:
   - 33: {fileID: 104157843}
   - 135: {fileID: 104157842}
   - 23: {fileID: 104157841}
+  - 54: {fileID: 104157844}
   m_Layer: 0
   m_Name: Sphere (2)
   m_TagString: Untagged
@@ -160,6 +161,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 104157839}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &104157844
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 104157839}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &220219549
 Prefab:
   m_ObjectHideFlags: 0
@@ -197,7 +213,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 2}
@@ -375,7 +391,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 411698, guid: 1499a8f4aef40d5409a060bc0f47d002, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11463568, guid: 1499a8f4aef40d5409a060bc0f47d002, type: 2}
       propertyPath: mEnemy
@@ -452,7 +468,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 490220, guid: fc3ed2ace7062a548b5e8bf7f9b15566, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc3ed2ace7062a548b5e8bf7f9b15566, type: 2}
@@ -541,31 +557,31 @@ Prefab:
     m_Modifications:
     - target: {fileID: 427218, guid: c57bd4c61d70e0e47bd579f2fe0a80b2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -22.23442
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 427218, guid: c57bd4c61d70e0e47bd579f2fe0a80b2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.49887258
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 427218, guid: c57bd4c61d70e0e47bd579f2fe0a80b2, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 8.505768
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 427218, guid: c57bd4c61d70e0e47bd579f2fe0a80b2, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.0022925432
       objectReference: {fileID: 0}
     - target: {fileID: 427218, guid: c57bd4c61d70e0e47bd579f2fe0a80b2, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.0083516715
       objectReference: {fileID: 0}
     - target: {fileID: 427218, guid: c57bd4c61d70e0e47bd579f2fe0a80b2, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.0010803408
       objectReference: {fileID: 0}
     - target: {fileID: 427218, guid: c57bd4c61d70e0e47bd579f2fe0a80b2, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9999619
       objectReference: {fileID: 0}
     - target: {fileID: 427218, guid: c57bd4c61d70e0e47bd579f2fe0a80b2, type: 2}
       propertyPath: m_RootOrder
@@ -582,6 +598,10 @@ Prefab:
     - target: {fileID: 13694370, guid: c57bd4c61d70e0e47bd579f2fe0a80b2, type: 2}
       propertyPath: m_Height
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 13694370, guid: c57bd4c61d70e0e47bd579f2fe0a80b2, type: 2}
+      propertyPath: m_Center.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 13606670, guid: c57bd4c61d70e0e47bd579f2fe0a80b2, type: 2}
@@ -600,6 +620,7 @@ GameObject:
   - 23: {fileID: 651386736}
   - 54: {fileID: 651386735}
   - 114: {fileID: 651386740}
+  - 114: {fileID: 651386741}
   m_Layer: 0
   m_Name: Snowball (1)
   m_TagString: Snowball
@@ -690,6 +711,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f63a6123113c98489aaa97f24e77044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mSize: {x: 0, y: 0, z: 0}
+  mSnowballSize: 1
+  mDamage: 1
+--- !u!114 &651386741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 651386734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cd93b9720e2038469296400deaef009, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mScaleSize: 2
+  MergableObjectType: 1
+  MergeTag: Snowball
+  MergeObject: {fileID: 0}
+  UseMergeRail: 0
+  DestroyOnMerge: 1
+  MergeOnRelease: 1
+  PermanentlyMerge: 0
+  MergeDistance: 0.05
+  MergeRailStart: {fileID: 0}
+  MergeTarget: {fileID: 651386739}
+  MergeRailThresholdDistance: 0
+  MergeRailThresholdAngle: 0
+  DistanceThreshold: 0.2
 --- !u!1 &653497469
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,6 +842,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f63a6123113c98489aaa97f24e77044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mSize: {x: 0, y: 0, z: 0}
+  mSnowballSize: 1
+  mDamage: 1
 --- !u!1 &687539078
 GameObject:
   m_ObjectHideFlags: 0
@@ -1010,6 +1062,7 @@ GameObject:
   - 4: {fileID: 955136774}
   - 114: {fileID: 955136773}
   - 136: {fileID: 955136775}
+  - 54: {fileID: 955136776}
   m_Layer: 0
   m_Name: Snowman
   m_TagString: Snowman
@@ -1036,7 +1089,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 955136772}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -4.31}
+  m_LocalPosition: {x: 0, y: 0.05, z: -5.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1146820975}
@@ -1057,6 +1110,21 @@ CapsuleCollider:
   m_Height: 3
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &955136776
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 955136772}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1146820974
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,6 +1136,7 @@ GameObject:
   - 33: {fileID: 1146820978}
   - 135: {fileID: 1146820977}
   - 23: {fileID: 1146820976}
+  - 64: {fileID: 1146820979}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -1132,6 +1201,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1146820974}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!64 &1146820979
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1146820974}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1208577323
 Prefab:
   m_ObjectHideFlags: 0
@@ -1169,7 +1250,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 428916, guid: 723e4c10d3c15314791ad0296dec88f3, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 143240, guid: 723e4c10d3c15314791ad0296dec88f3, type: 2}
       propertyPath: m_Name
@@ -1178,217 +1259,11 @@ Prefab:
     - target: {fileID: 3373824, guid: 723e4c10d3c15314791ad0296dec88f3, type: 2}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1481441398}
+      objectReference: {fileID: 1214727490}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 723e4c10d3c15314791ad0296dec88f3, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1339686690
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1339686695}
-  - 33: {fileID: 1339686694}
-  - 135: {fileID: 1339686693}
-  - 23: {fileID: 1339686692}
-  - 54: {fileID: 1339686691}
-  - 114: {fileID: 1339686696}
-  m_Layer: 0
-  m_Name: Snowball (5)
-  m_TagString: Snowball
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!54 &1339686691
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1339686690}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!23 &1339686692
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1339686690}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 11c9c21a57113d64d8767f5ccbdc0cd1, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!135 &1339686693
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1339686690}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &1339686694
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1339686690}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1339686695
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1339686690}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.826, y: 0.35, z: 1.28}
-  m_LocalScale: {x: 0.15999997, y: 0.15999997, z: 0.15999997}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
---- !u!114 &1339686696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1339686690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f63a6123113c98489aaa97f24e77044, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1463825066
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1463825071}
-  - 33: {fileID: 1463825070}
-  - 135: {fileID: 1463825069}
-  - 23: {fileID: 1463825068}
-  - 54: {fileID: 1463825067}
-  - 114: {fileID: 1463825072}
-  m_Layer: 0
-  m_Name: Snowball (3)
-  m_TagString: Snowball
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!54 &1463825067
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1463825066}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!23 &1463825068
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1463825066}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 11c9c21a57113d64d8767f5ccbdc0cd1, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!135 &1463825069
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1463825066}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &1463825070
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1463825066}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1463825071
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1463825066}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.165, y: 0.35, z: 1.28}
-  m_LocalScale: {x: 0.15999997, y: 0.15999997, z: 0.15999997}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
---- !u!114 &1463825072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1463825066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f63a6123113c98489aaa97f24e77044, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!43 &1481441398
+--- !u!43 &1214727490
 Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1516,6 +1391,307 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
+--- !u!1 &1308235753
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1308235754}
+  - 33: {fileID: 1308235758}
+  - 135: {fileID: 1308235757}
+  - 23: {fileID: 1308235756}
+  - 114: {fileID: 1308235755}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1308235754
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1308235753}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1719628329}
+  m_RootOrder: 1
+--- !u!114 &1308235755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1308235753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66feceaca73fc2d4b8b44978295b9cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mAttackTimer: 0
+  mSnowman: {fileID: 0}
+--- !u!23 &1308235756
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1308235753}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!135 &1308235757
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1308235753}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1308235758
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1308235753}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1339686690
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1339686695}
+  - 33: {fileID: 1339686694}
+  - 135: {fileID: 1339686693}
+  - 23: {fileID: 1339686692}
+  - 54: {fileID: 1339686691}
+  - 114: {fileID: 1339686696}
+  m_Layer: 0
+  m_Name: Snowball (5)
+  m_TagString: Snowball
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &1339686691
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1339686690}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!23 &1339686692
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1339686690}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 11c9c21a57113d64d8767f5ccbdc0cd1, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!135 &1339686693
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1339686690}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1339686694
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1339686690}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1339686695
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1339686690}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.826, y: 0.35, z: 1.28}
+  m_LocalScale: {x: 0.15999997, y: 0.15999997, z: 0.15999997}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+--- !u!114 &1339686696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1339686690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f63a6123113c98489aaa97f24e77044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mSize: {x: 0, y: 0, z: 0}
+  mSnowballSize: 1
+  mDamage: 1
+--- !u!1 &1463825066
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1463825071}
+  - 33: {fileID: 1463825070}
+  - 135: {fileID: 1463825069}
+  - 23: {fileID: 1463825068}
+  - 54: {fileID: 1463825067}
+  - 114: {fileID: 1463825072}
+  m_Layer: 0
+  m_Name: Snowball (3)
+  m_TagString: Snowball
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &1463825067
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1463825066}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!23 &1463825068
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1463825066}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 11c9c21a57113d64d8767f5ccbdc0cd1, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!135 &1463825069
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1463825066}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1463825070
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1463825066}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1463825071
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1463825066}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.165, y: 0.35, z: 1.28}
+  m_LocalScale: {x: 0.15999997, y: 0.15999997, z: 0.15999997}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+--- !u!114 &1463825072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1463825066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f63a6123113c98489aaa97f24e77044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mSize: {x: 0, y: 0, z: 0}
+  mSnowballSize: 1
+  mDamage: 1
 --- !u!1 &1592988660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1619,6 +1795,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f63a6123113c98489aaa97f24e77044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mSize: {x: 0, y: 0, z: 0}
+  mSnowballSize: 1
+  mDamage: 1
 --- !u!1 &1712342896
 GameObject:
   m_ObjectHideFlags: 0
@@ -1694,6 +1873,10 @@ Transform:
   m_Children: []
   m_Father: {fileID: 687539080}
   m_RootOrder: 0
+--- !u!4 &1719628329 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 427218, guid: c57bd4c61d70e0e47bd579f2fe0a80b2, type: 2}
+  m_PrefabInternal: {fileID: 643813653}
 --- !u!1 &2116762256
 GameObject:
   m_ObjectHideFlags: 0

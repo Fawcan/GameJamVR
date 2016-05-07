@@ -8,6 +8,10 @@ using System.Collections.Generic;
 /// </summary>
 public class MergeableObject : HandInteractionBase<ObjectGrabingV2>
 {
+
+    [SerializeField] private float mScaleSize = 2;
+
+
     public enum MergableObjectTypes { AnyObject, SpecTag, SpecObject }
     public MergableObjectTypes MergableObjectType;
 
@@ -241,6 +245,8 @@ public class MergeableObject : HandInteractionBase<ObjectGrabingV2>
 
             if (DestroyOnMerge)
                 Destroy(body.gameObject);
+
+            MergeObject.transform.localScale *= mScaleSize;
         }
     }
 

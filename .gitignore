@@ -1,4 +1,13 @@
 ViveSandboxProj/Library/
 ViveSandboxProj/Temp/
+<<<<<<< HEAD
+*.csproj
+*.suo
+=======
 *.suo
 *.csproj
+<<<<<<< HEAD
+New Unity Project/Library/
+=======
+>>>>>>> 174a6aecae2517bf80ff34c10154fb37ba0d8363
+>>>>>>> d2db4fed7398b20a1128e98532e6f614c3754322

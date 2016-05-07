@@ -30,6 +30,7 @@ public class Enemy : MonoBehaviour {
         if(other.transform.tag == "Snowball")
         {
             EnemyHP -= 1;
+            
         }
     }
 }

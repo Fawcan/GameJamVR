@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Enemy
   - Snowball
+  - Ammo
+  - Controller
+  - Snowman
   layers:
   - Default
   - TransparentFX

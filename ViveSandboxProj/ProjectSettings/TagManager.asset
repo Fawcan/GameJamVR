@@ -4,7 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ammo
+  - Enemy
+  - Snowball
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - Environment
   - Arrows
   - Bow
-  - 
+  - Enemy
   - 
   - 
   - 

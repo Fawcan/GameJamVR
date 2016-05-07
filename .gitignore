@@ -18,6 +18,7 @@ sysinfo.txt
 /*.pidb
 /*.suo
 /*.sln*
+/*.csproj*
 /*.user
 /*.unityproj
 /*.booproj

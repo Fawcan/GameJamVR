@@ -14,11 +14,11 @@ public class Snowball : MonoBehaviour {
 	
 	}
 
-    void OnCollisionEnter(Collision other)
-    {
-        if (other.transform.tag != "Controller")
-        {
-            DestroyObject(gameObject);
-        }
-    }
+    //void OnCollisionEnter(Collision other)
+    //{
+    //    if (other.transform.tag != "Controller")
+    //    {
+    //        DestroyObject(gameObject);
+    //    }
+    //}
 }

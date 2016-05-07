@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:ViveSandboxProj/Assets/Prefabs/JamPrefabs/Materials/Wood_dark.mat.meta
+guid: c02103ebbbe3ddb4d8e1308805aa39c2
+timeCreated: 1462633456
+=======
 guid: 50631bdb0c6e45d4a8f7af1a46e893ed
 timeCreated: 1462632535
+>>>>>>> 174a6aecae2517bf80ff34c10154fb37ba0d8363:ViveSandboxProj/Assets/Prefabs/JamPrefabs/Materials/Wood_dark.mat.meta
 licenseType: Free
 NativeFormatImporter:
   userData: 

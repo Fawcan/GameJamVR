@@ -1,0 +1,4 @@
+ViveSandboxProj/Library/
+ViveSandboxProj/Temp/
+*.suo
+*.csproj

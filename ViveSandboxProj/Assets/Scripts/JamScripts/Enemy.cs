@@ -7,12 +7,9 @@ public class Enemy : MonoBehaviour {
     [SerializeField] private int mEnemyDmg = 1;
     [SerializeField] private Transform mGoal;
     [SerializeField] private float mSpeed = 1.2f;
-    [SerializeField] private float mDamageCD = 5f;
-
-    [SerializeField] private float mAttackTimer;
-    [SerializeField] private bool mSnowmanInRange = false;
     [SerializeField] private GameObject mSnowman;
-
+    [SerializeField] private bool mSnowmanInRange = false;
+    [SerializeField] private float mDamageCD = 5f;
 
     private GameManager mManager;
 
@@ -33,6 +30,16 @@ public class Enemy : MonoBehaviour {
         get { return mSpeed; }
         set { mSpeed = value; }
     }
+    public float DamageCD
+    {
+        get { return mDamageCD; }
+    }
+
+    public bool SnowmanInRange
+    {
+        get { return mSnowmanInRange; }
+        set { mSnowmanInRange = value; }
+    }
                                        // Use this for initialization
     void Awake ()
     {
@@ -41,7 +48,7 @@ public class Enemy : MonoBehaviour {
         mAgent.destination = mGoal.position;
         mAgent.speed = Speed;
         mSnowman = GameObject.FindGameObjectWithTag("Snowman");
-        mManager = GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>();
+        //mManager = GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>();    
 	}
 	
     
@@ -53,24 +60,12 @@ public class Enemy : MonoBehaviour {
             mManager.EnemiesLeft -= 1;
             DestroyObject(gameObject);
         }
-
-        mAttackTimer += Time.deltaTime;
-        
-        if(mAttackTimer >= mDamageCD && mSnowmanInRange && EnemyHP > 0)
-        {
-            
-        }       
 	}
 
-
-    void OnCollisionEnter(Collision other)
+    public void TakeDamage(int mDamage)
     {
-        
-        if(other.transform.tag == "Snowball")
-        {
-            Debug.Log("Collision with snowball");
-            EnemyHP -= 1;
-        }
+        EnemyHP -= mDamage;
     }
 
+    
 }

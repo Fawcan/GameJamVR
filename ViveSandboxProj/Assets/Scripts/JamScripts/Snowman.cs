@@ -20,7 +20,7 @@ public class Snowman : MonoBehaviour {
     {
 	    if(SnowmanHealth <= 0)
         {
-            //Run gameover screen
+            Application.Quit();
         }
 	}
 

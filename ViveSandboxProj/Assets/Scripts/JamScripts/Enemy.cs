@@ -48,7 +48,7 @@ public class Enemy : MonoBehaviour {
         mAgent.destination = mGoal.position;
         mAgent.speed = Speed;
         mSnowman = GameObject.FindGameObjectWithTag("Snowman");
-        //mManager = GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>();    
+        mManager = GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>();    
 	}
 	
     
@@ -62,15 +62,9 @@ public class Enemy : MonoBehaviour {
         }
 	}
 
-
-    void OnCollisionEnter(Collision other)
+    public void TakeDamage(int mDamage)
     {
-        Debug.Log(other.transform.tag);
-        if (other.transform.tag == "Snowball")
-        {
-            Debug.Log("Collision with snowball");
-            EnemyHP -= 1;
-        }
+        EnemyHP -= mDamage;
     }
 
     

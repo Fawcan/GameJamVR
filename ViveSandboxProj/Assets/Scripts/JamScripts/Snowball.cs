@@ -17,6 +17,7 @@ public class Snowball : MonoBehaviour {
 
     [SerializeField] private int mDamage = 1;
 
+    [SerializeField]private GameObject explosion;
 
     private Rigidbody mRigidBody;
 
@@ -61,6 +62,10 @@ public class Snowball : MonoBehaviour {
     {
         Debug.Log("Snowball destroyed");
         //Insert the particle system here
+        if (explosion != null)
+        {
+            Instantiate(explosion, gameObject.transform.position, gameObject.transform.rotation);
+        }
 
         DestroyObject(gameObject);
     }

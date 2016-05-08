@@ -11,6 +11,9 @@ public class Enemy : MonoBehaviour {
     [SerializeField] private bool mSnowmanInRange = false;
     [SerializeField] private float mDamageCD = 5f;
 
+    [SerializeField] private GameObject ashpile;
+
+
     private GameManager mManager;
 
     public int EnemyHP
@@ -59,6 +62,11 @@ public class Enemy : MonoBehaviour {
         {
             mManager.EnemiesLeft -= 1;
             DestroyObject(gameObject);
+
+            if (ashpile != null)
+            {
+                Instantiate(ashpile, gameObject.transform.position, gameObject.transform.rotation);
+            }
         }
 	}
 

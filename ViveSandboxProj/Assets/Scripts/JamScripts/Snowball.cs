@@ -38,21 +38,28 @@ public class Snowball : MonoBehaviour {
 
     void OnCollisionEnter(Collision other)
     {
+        Debug.Log(other.transform.tag);
         if(other.transform.tag == "Enemy")
         {
-            Debug.Log(other.transform.tag);
+            Debug.Log("Collision with enemy");
             other.transform.GetComponent<Enemy>().TakeDamage(mDamage);
             if(mSnowballSize < 3)
             {
                 DestroySnowball();
             }
         }
-        if(other.transform.tag == "Ground")
+        else if(other.transform.tag == "Ground")
         {
+            Debug.Log("Collision with Ground");
             if(mSnowballSize < 4)
             {
                 DestroySnowball();
             }
+        }
+
+        else
+        {
+            return;
         }
 
 
@@ -81,24 +88,20 @@ public class Snowball : MonoBehaviour {
         
         switch(mSnowballSize)
         {
-            case 1:
-                this.transform.localScale = mSize1;
-                mRigidBody.mass = mMass1;
-                break;
-
+            
             case 2:
                 this.transform.localScale = mSize2;
-                mRigidBody.mass = mMass2;
+                //mRigidBody.mass = mMass2;
                 break;
 
             case 3:
                 this.transform.localScale = mSize3;
-                mRigidBody.mass = mMass3;
+                //mRigidBody.mass = mMass3;
                 break;
 
             case 4:
                 this.transform.localScale = mSize4;
-                mRigidBody.mass = mMass4;
+                //mRigidBody.mass = mMass4;
                 break;
 
         }         

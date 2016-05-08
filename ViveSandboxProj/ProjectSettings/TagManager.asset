@@ -10,6 +10,7 @@ TagManager:
   - Controller
   - Snowman
   - Manager
+  - Ground
   layers:
   - Default
   - TransparentFX

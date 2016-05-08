@@ -12,7 +12,7 @@ GameObject:
   - 114: {fileID: 11490012}
   m_Layer: 0
   m_Name: Manager
-  m_TagString: Untagged
+  m_TagString: Manager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,6 +43,10 @@ MonoBehaviour:
   mEnemy: {fileID: 166356, guid: c57bd4c61d70e0e47bd579f2fe0a80b2, type: 2}
   mSnowman: {fileID: 0}
   mSpawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   mSpawnCD: 5

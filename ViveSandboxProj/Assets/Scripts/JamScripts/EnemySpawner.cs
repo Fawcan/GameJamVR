@@ -9,6 +9,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private float mSpawnCD = 5f;
     [SerializeField] private int mNrOfEnemiesToSpawn = 8;
     [SerializeField] private GameManager mManager;
+    [SerializeField] private int mSpawnsLeft;
 
     [SerializeField] private float mSpawnTimer = 0f;
 
@@ -21,6 +22,12 @@ public class EnemySpawner : MonoBehaviour
     {
         get { return mNrOfEnemiesToSpawn; }
         set { mNrOfEnemiesToSpawn = value; }
+    }
+
+    public int SpawnsLeft
+    {
+        get { return mSpawnsLeft; }
+        set { mSpawnsLeft = value; }
     }
 
     // Update is called once per frame
@@ -42,8 +49,7 @@ public class EnemySpawner : MonoBehaviour
 
 
             mSpawnTimer = 0f;
-            mNrOfEnemiesToSpawn -= 1;
-            mManager.EnemiesLeft += 1;
+            mSpawnsLeft -= 1;
 
             int mSpawnPointIndex = Random.Range(0, mSpawnPoints.Length);
 

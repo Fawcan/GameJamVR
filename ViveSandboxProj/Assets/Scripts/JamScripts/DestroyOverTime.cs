@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DestroyOverTime : MonoBehaviour {
+public class DestroyOverTime : MonoBehaviour
+{
+    [SerializeField] private float Timer;
 
 	// Use this for initialization
 	void Start ()
@@ -13,11 +15,11 @@ public class DestroyOverTime : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-	
+	    
 	}
     IEnumerator StartDelay()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(Timer);
         Debug.Log("Delay done.");
         DestroyObject(gameObject);
     }

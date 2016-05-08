@@ -9,11 +9,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 476218}
   - 33: {fileID: 3304736}
-  - 135: {fileID: 13575930}
   - 23: {fileID: 2349952}
   - 54: {fileID: 5436538}
   - 114: {fileID: 11429272}
   - 114: {fileID: 11433624}
+  - 135: {fileID: 13544976}
   m_Layer: 0
   m_Name: Snowball
   m_TagString: Snowball
@@ -28,8 +28,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 137004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.909943, y: 0.001095295, z: 0.21147156}
-  m_LocalScale: {x: 7, y: 7, z: 7}
+  m_LocalPosition: {x: -19.26, y: -1.98, z: -12.23}
+  m_LocalScale: {x: 5.5, y: 5.5, z: 5.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -43,7 +43,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 66706639d42264b4ca8744679ff5cd5b, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -73,7 +73,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 137004}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.2
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -117,18 +117,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f63a6123113c98489aaa97f24e77044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mSize1: {x: 0, y: 0, z: 0}
-  mMass1: 0
-  mSize2: {x: 0, y: 0, z: 0}
-  mMass2: 0
-  mSize3: {x: 0, y: 0, z: 0}
-  mMass3: 0
-  mSize4: {x: 0, y: 0, z: 0}
-  mMass4: 0
+  mSize: {x: 0, y: 0, z: 0}
+  mWeight: 0
   mSnowballSize: 1
   mDamage: 1
   explosion: {fileID: 184922, guid: 86dd36dad7e766b4387e4ab05a2227e8, type: 2}
---- !u!135 &13575930
+--- !u!135 &13544976
 SphereCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -138,8 +132,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.01
+  m_Center: {x: -4.656613e-10, y: -4.656613e-10, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

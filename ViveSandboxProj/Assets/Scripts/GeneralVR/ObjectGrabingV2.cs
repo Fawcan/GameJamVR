@@ -17,6 +17,7 @@ public abstract class ObjectGrabingV2 : HandInteractionBase<ObjectGrabingV2>
     private LayerMask GrabableLayers;
     [SerializeField]
     private bool GrabByPointer;
+    private float ThrowForce = 0.3f;
 
     protected abstract bool GrabTriggerPress();
     protected abstract bool GrabTriggerPressedDown();
@@ -204,7 +205,7 @@ public abstract class ObjectGrabingV2 : HandInteractionBase<ObjectGrabingV2>
 
         var body = _State.ObjectInHand;
         _State.ObjectInHand.isKinematic = false;
-        _State.ObjectInHand.AddForceAtPosition(_State.CurrentVelocity, Trans.position, ForceMode.VelocityChange);
+        _State.ObjectInHand.AddForceAtPosition(_State.CurrentVelocity * ThrowForce, Trans.position, ForceMode.Impulse);
 
         _State.ObjectInHand = null;
         _State.ObjectInHandTrans = null;

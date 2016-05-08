@@ -3,10 +3,21 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private GameObject mNewWave;
+    [SerializeField] private GameObject mWaveCompletedObj;
     [SerializeField] private Snowman mSnowman;
     [SerializeField] private EnemySpawner mSpawner;
     [SerializeField] private int mEnemiesLeft;
     [SerializeField] private int mWaveNr = 0;
+    [SerializeField] private bool mBetweenWaves = true;
+    [SerializeField] private bool mWaveCompleted;
+    [SerializeField] private float mTimer;
+    [SerializeField] private float mCD = 10f;
+    public bool BetweenWaves
+    {
+        get { return mBetweenWaves; }
+        set { mBetweenWaves = value; }
+    }
 
     public int EnemiesLeft
     {
@@ -29,10 +40,48 @@ public class GameManager : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-	    if(mSpawner.EnemiesToSpawn <= 0 && EnemiesLeft == 0)
+        if(mTimer > 0)
         {
-            //Tell the player to do preparations for next wave
+            mTimer -= Time.deltaTime;
         }
+        
+        if(mTimer <= 0)
+        {
+            mWaveCompleted = false;
+        }
+
+        
+	    if(mSpawner.EnemiesToSpawn <= 0 && EnemiesLeft == 0 && !BetweenWaves)
+        {
+            mWaveCompleted = true;
+            mTimer = mCD;
+        }
+
+        if (mWaveCompleted)
+        {
+            if(mWaveCompletedObj != null)
+            {
+                mWaveCompletedObj.SetActive(true);
+            }
+        }
+        else
+        {
+            mWaveCompletedObj.SetActive(false);
+        }
+
+        if(BetweenWaves)
+        {
+            if(mNewWave != null)
+            {
+                mNewWave.SetActive(true);
+            }
+        }
+        else
+        {
+            mNewWave.SetActive(false);
+        }
+
+
 	}
 
     public void NewWave()

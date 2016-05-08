@@ -9,7 +9,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 406712}
   - 33: {fileID: 3340470}
-  - 135: {fileID: 13599770}
   - 23: {fileID: 2351620}
   m_Layer: 0
   m_Name: SnowballNode(1)
@@ -46,7 +45,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 479686}
   - 33: {fileID: 3375552}
-  - 135: {fileID: 13554692}
   - 23: {fileID: 2348202}
   m_Layer: 0
   m_Name: SnowballNode
@@ -64,7 +62,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 449800}
   - 33: {fileID: 3391478}
-  - 135: {fileID: 13534702}
   - 23: {fileID: 2396120}
   m_Layer: 0
   m_Name: SnowballNode(2)
@@ -82,7 +79,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 430484}
   - 33: {fileID: 3309630}
-  - 135: {fileID: 13581980}
   - 23: {fileID: 2393162}
   m_Layer: 0
   m_Name: SnowballNode (3)
@@ -100,7 +96,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 445868}
   - 33: {fileID: 3311378}
-  - 135: {fileID: 13550626}
   - 23: {fileID: 2345160}
   m_Layer: 0
   m_Name: SnowballNode (4)
@@ -164,8 +159,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 120752}
   m_LocalRotation: {x: 0, y: -1, z: 0, w: -0.00000016292068}
-  m_LocalPosition: {x: -19.264297, y: 1.0071416, z: -4.668396}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.217, y: 0, z: -0.068}
+  m_LocalScale: {x: 6, y: 6, z: 6}
   m_Children:
   - {fileID: 479686}
   - {fileID: 406712}
@@ -429,66 +424,6 @@ MonoBehaviour:
   - {fileID: 2393162}
   - {fileID: 2345160}
   NormFillValue: 0
---- !u!135 &13534702
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 146498}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!135 &13550626
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 157370}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!135 &13554692
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 131324}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!135 &13581980
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 147928}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!135 &13599770
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 102644}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

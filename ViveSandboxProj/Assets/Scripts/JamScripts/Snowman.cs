@@ -33,6 +33,7 @@ public class Snowman : MonoBehaviour {
 
     public void TakeDamage(int mDamage)
     {
+        // insert code to show the smack screen
         SnowmanHealth -= mDamage;
     }
 }

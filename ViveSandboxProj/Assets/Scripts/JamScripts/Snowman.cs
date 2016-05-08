@@ -5,6 +5,7 @@ public class Snowman : MonoBehaviour {
     [SerializeField] private int mCurrentHealth;
     [SerializeField] private LEDBar mLed;
     [SerializeField] private int mMaxHealth = 5;
+    [SerializeField] private GameManager mManager;
 
     public int SnowmanHealth
     {
@@ -15,6 +16,7 @@ public class Snowman : MonoBehaviour {
     void Awake ()
     {
         SnowmanHealth = mMaxHealth;
+        mManager = GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>();
 	}
 	
 	// Update is called once per frame
@@ -31,6 +33,16 @@ public class Snowman : MonoBehaviour {
         }
 	}
 
+    void OnCollisionEnter(Collision other)
+    {
+        if(other.transform.tag == "Snowball")
+        {
+            if(mManager.BetweenWaves)
+            {
+                mManager.NewWave();
+            }
+        }
+    }
     public void TakeDamage(int mDamage)
     {
         // insert code to show the smack screen

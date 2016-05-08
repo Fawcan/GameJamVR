@@ -5,14 +5,8 @@ using System.Collections;
 
 public class Snowball : MonoBehaviour {
 
-    [SerializeField] private Vector3 mSize1;
-    [SerializeField] private float mMass1;
-    [SerializeField] private Vector3 mSize2;
-    [SerializeField] private float mMass2;
-    [SerializeField] private Vector3 mSize3;
-    [SerializeField] private float mMass3;
-    [SerializeField] private Vector3 mSize4;
-    [SerializeField] private float mMass4;
+    [SerializeField] private Vector3 mSize = new Vector3(5.5f, 5.5f, 5.5f);
+    [SerializeField] private float mWeight = 0.2f;
     [SerializeField] private int mSnowballSize = 1;
 
     [SerializeField] private int mDamage = 1;
@@ -20,25 +14,26 @@ public class Snowball : MonoBehaviour {
     [SerializeField]private GameObject explosion;
 
     private Rigidbody mRigidBody;
+    private Vector3 mStandardSize = new Vector3(5.5f, 5.5f, 5.5f);
+    private float mStandardWeight = 0.2f;
 
 
 
     // Use this for initialization
     void Awake()
     {
-        mSize1 = this.transform.localScale;
         mRigidBody = GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
-	    
-	}
+
+    }
 
     void OnCollisionEnter(Collision other)
     {
-        Debug.Log(other.transform.tag);
+        Debug.Log(mSnowballSize);
         if(other.transform.tag == "Enemy")
         {
             Debug.Log("Collision with enemy");
@@ -53,7 +48,7 @@ public class Snowball : MonoBehaviour {
             Debug.Log("Collision with Ground");
             if(mSnowballSize < 4)
             {
-                DestroySnowball();
+                DestroySnowball();  
             }
         }
 
@@ -77,36 +72,54 @@ public class Snowball : MonoBehaviour {
         DestroyObject(gameObject);
     }
 
-    public void UpScale()
+    public Vector3 UpScale()
     {
         Debug.Log("Starded the upscaling in merge on :" + gameObject + " current size is " + this.mSnowballSize);
         mSnowballSize++;
-   
         if (mSnowballSize > 4)
-        {
             mSnowballSize = 4;
-        }
+
+        mSize = AdjustSize();
+        mWeight =  AdjustWeight();
         
-        switch(mSnowballSize)
-        {
-            
-            case 2:
-                this.transform.localScale = mSize2;
-                //mRigidBody.mass = mMass2;
-                break;
 
-            case 3:
-                this.transform.localScale = mSize3;
-                //mRigidBody.mass = mMass3;
-                break;
-
-            case 4:
-                this.transform.localScale = mSize4;
-                //mRigidBody.mass = mMass4;
-                break;
-
-        }         
-            
-        
+        //this.transform.localScale = mSize;
+        mRigidBody.mass = mWeight;
+        return mSize;
     }
+
+    Vector3 AdjustSize ()
+    {
+        Debug.Log("Adjusting seize" + mSize);
+        Vector3 Size;
+        if (mSnowballSize == 4)
+            Size = new Vector3(30, 30, 30);
+        else if (mSnowballSize == 3)
+            Size = new Vector3(18, 18, 18);
+        else if (mSnowballSize == 2)
+            Size = new Vector3(8, 8, 8);
+        else
+            Size = mStandardSize;
+        Debug.Log(Size);
+        return Size;
+    }
+
+    float AdjustWeight()
+    {
+        Debug.Log("Adjusting weight" + mWeight);
+        float Weight;
+        if (mSnowballSize == 4)
+            Weight = 1.2f;
+        else if (mSnowballSize == 3)
+            Weight = 0.7f;
+        else if (mSnowballSize == 2)
+            Weight = 0.5f;
+        else
+            Weight = mStandardWeight;
+
+        Debug.Log(Weight);
+        return Weight;
+    }
+
+
 }

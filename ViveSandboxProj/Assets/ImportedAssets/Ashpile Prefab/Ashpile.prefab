@@ -11,6 +11,7 @@ GameObject:
   - 33: {fileID: 3311342}
   - 23: {fileID: 2382530}
   - 95: {fileID: 9575154}
+  - 114: {fileID: 11472926}
   m_Layer: 0
   m_Name: Ashpile
   m_TagString: Untagged
@@ -110,6 +111,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11472926
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 156356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d862ef8f66f00af46b124d84cd582880, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Timer: 3
 --- !u!198 &19870458
 ParticleSystem:
   m_ObjectHideFlags: 1

@@ -224,6 +224,7 @@ public class MergeableObject : HandInteractionBase<ObjectGrabingV2>
 
     private void DoMerge(Rigidbody body, bool inGripp)
     {
+        Vector3 Size;
         if ((MergeOnRelease && inGripp == false) || MergeOnRelease == false)
         {
             _State.Merged++;
@@ -247,7 +248,8 @@ public class MergeableObject : HandInteractionBase<ObjectGrabingV2>
                 Destroy(body.gameObject);
 
             Debug.Log("Destroyed in merge");
-            MergeTarget.GetComponent<Snowball>().UpScale();
+            Size = MergeTarget.GetComponent<Snowball>().UpScale();
+            MergeTarget.transform.localScale = Size;
         }
     }
 

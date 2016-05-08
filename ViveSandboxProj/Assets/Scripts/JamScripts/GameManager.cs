@@ -4,15 +4,11 @@ using System.Collections;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject mNewWave;
-    [SerializeField] private GameObject mWaveCompletedObj;
     [SerializeField] private Snowman mSnowman;
     [SerializeField] private EnemySpawner mSpawner;
     [SerializeField] private int mEnemiesLeft;
     [SerializeField] private int mWaveNr = 0;
     [SerializeField] private bool mBetweenWaves = true;
-    [SerializeField] private bool mWaveCompleted;
-    [SerializeField] private float mTimer;
-    [SerializeField] private float mCD = 10f;
     public bool BetweenWaves
     {
         get { return mBetweenWaves; }
@@ -40,35 +36,14 @@ public class GameManager : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        if(mTimer > 0)
-        {
-            mTimer -= Time.deltaTime;
-        }
+       
         
-        if(mTimer <= 0)
+	    if(mSpawner.SpawnsLeft <= 0 && EnemiesLeft == 0 && !BetweenWaves)
         {
-            mWaveCompleted = false;
+            BetweenWaves = true;
         }
 
-        
-	    if(mSpawner.EnemiesToSpawn <= 0 && EnemiesLeft == 0 && !BetweenWaves)
-        {
-            mWaveCompleted = true;
-            mTimer = mCD;
-        }
-
-        if (mWaveCompleted)
-        {
-            if(mWaveCompletedObj != null)
-            {
-                mWaveCompletedObj.SetActive(true);
-            }
-        }
-        else
-        {
-            mWaveCompletedObj.SetActive(false);
-        }
-
+       
         if(BetweenWaves)
         {
             if(mNewWave != null)
@@ -87,6 +62,11 @@ public class GameManager : MonoBehaviour
     public void NewWave()
     {
         mWaveNr += 1;
-        mSpawner.EnemiesToSpawn += 6;
+        mSpawner.EnemiesToSpawn += 8;
+        mSpawner.SpawnsLeft = mSpawner.EnemiesToSpawn;
+
+        mEnemiesLeft = mSpawner.EnemiesToSpawn;
+
+        BetweenWaves =  false;
     }
 }

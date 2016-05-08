@@ -246,6 +246,7 @@ public class MergeableObject : HandInteractionBase<ObjectGrabingV2>
             if (DestroyOnMerge)
                 Destroy(body.gameObject);
 
+            Debug.Log("Destroyed in merge");
             MergeTarget.GetComponent<Snowball>().UpScale();
         }
     }

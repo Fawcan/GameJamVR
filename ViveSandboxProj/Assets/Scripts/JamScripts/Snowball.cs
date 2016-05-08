@@ -79,6 +79,7 @@ public class Snowball : MonoBehaviour {
 
     public void UpScale()
     {
+        Debug.Log("Starded the upscaling in merge on :" + gameObject + " current size is " + this.mSnowballSize);
         mSnowballSize++;
    
         if (mSnowballSize > 4)

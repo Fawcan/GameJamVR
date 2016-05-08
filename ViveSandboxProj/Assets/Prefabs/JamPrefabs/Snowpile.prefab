@@ -165,7 +165,6 @@ GameObject:
   - 4: {fileID: 464804}
   - 33: {fileID: 3332496}
   - 23: {fileID: 2309050}
-  - 95: {fileID: 9519018}
   - 54: {fileID: 5478848}
   - 64: {fileID: 6443994}
   - 114: {fileID: 11461500}
@@ -254,8 +253,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153316}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25.457432, y: -7.0125055, z: -10.691479}
+  m_LocalRotation: {x: 0, y: 0.5954011, z: 0, w: 0.80342865}
+  m_LocalPosition: {x: -27.618702, y: -6.552191, z: -1.0242052}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 462506}
@@ -674,7 +673,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 118
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!64 &6402040
 MeshCollider:
@@ -683,7 +682,7 @@ MeshCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 166472}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Convex: 1
@@ -695,7 +694,7 @@ MeshCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 134850}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Convex: 1
@@ -707,7 +706,7 @@ MeshCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 190638}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Convex: 1
@@ -719,7 +718,7 @@ MeshCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 176292}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Convex: 1
@@ -731,7 +730,7 @@ MeshCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 134830}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Convex: 1
@@ -743,7 +742,7 @@ MeshCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 107934}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Convex: 1
@@ -755,7 +754,7 @@ MeshCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 128050}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Convex: 1
@@ -767,28 +766,11 @@ MeshCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 190000}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Convex: 1
   m_Mesh: {fileID: 4300000, guid: 9cdeaf9ff3ac245458f917387d3aa09c, type: 3}
---- !u!95 &9519018
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 190638}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 9cdeaf9ff3ac245458f917387d3aa09c, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11401156
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -805,7 +787,7 @@ MonoBehaviour:
   SpawnObjectInOrigo: 1
   PickupablePrefab: {fileID: 0}
   SpawnPickupableInOrigo: 0
-  mNrOfSnowballs: 0
+  mNrOfSnowballs: 2147483647
 --- !u!114 &11416892
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -822,7 +804,7 @@ MonoBehaviour:
   SpawnObjectInOrigo: 1
   PickupablePrefab: {fileID: 0}
   SpawnPickupableInOrigo: 0
-  mNrOfSnowballs: 0
+  mNrOfSnowballs: 2147483647
 --- !u!114 &11418352
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -839,7 +821,7 @@ MonoBehaviour:
   SpawnObjectInOrigo: 1
   PickupablePrefab: {fileID: 0}
   SpawnPickupableInOrigo: 0
-  mNrOfSnowballs: 0
+  mNrOfSnowballs: 2147483647
 --- !u!114 &11422442
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -856,7 +838,7 @@ MonoBehaviour:
   SpawnObjectInOrigo: 1
   PickupablePrefab: {fileID: 0}
   SpawnPickupableInOrigo: 0
-  mNrOfSnowballs: 0
+  mNrOfSnowballs: 2147483647
 --- !u!114 &11443860
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -873,7 +855,7 @@ MonoBehaviour:
   SpawnObjectInOrigo: 1
   PickupablePrefab: {fileID: 0}
   SpawnPickupableInOrigo: 0
-  mNrOfSnowballs: 0
+  mNrOfSnowballs: 2147483647
 --- !u!114 &11453646
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -890,7 +872,7 @@ MonoBehaviour:
   SpawnObjectInOrigo: 1
   PickupablePrefab: {fileID: 0}
   SpawnPickupableInOrigo: 0
-  mNrOfSnowballs: 0
+  mNrOfSnowballs: 2147483647
 --- !u!114 &11461500
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -907,7 +889,7 @@ MonoBehaviour:
   SpawnObjectInOrigo: 1
   PickupablePrefab: {fileID: 0}
   SpawnPickupableInOrigo: 0
-  mNrOfSnowballs: 0
+  mNrOfSnowballs: 2147483647
 --- !u!114 &11487498
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -924,7 +906,7 @@ MonoBehaviour:
   SpawnObjectInOrigo: 1
   PickupablePrefab: {fileID: 0}
   SpawnPickupableInOrigo: 0
-  mNrOfSnowballs: 0
+  mNrOfSnowballs: 2147483647
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

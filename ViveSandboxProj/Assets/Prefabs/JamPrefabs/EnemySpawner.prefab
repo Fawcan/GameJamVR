@@ -8,7 +8,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 411698}
-  - 114: {fileID: 11463568}
   m_Layer: 0
   m_Name: EnemySpawner
   m_TagString: Untagged
@@ -23,26 +22,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 138842}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.7861829, y: 0.81606394, z: -3.2062414}
+  m_LocalPosition: {x: -4.91, y: 0, z: 6.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11463568
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 138842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8309b34cba37c5a4093c333c8a056867, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mEnemy: {fileID: 0}
-  mSpawnTimer: 5
-  mSnowman: {fileID: 0}
-  mSpawnPoints: []
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

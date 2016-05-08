@@ -6,6 +6,7 @@ public class Snowman : MonoBehaviour {
     [SerializeField] private LEDBar mLed;
     [SerializeField] private int mMaxHealth = 5;
     [SerializeField] private GameManager mManager;
+    [SerializeField] private GameObject FoomObj;
 
     public int SnowmanHealth
     {
@@ -45,7 +46,7 @@ public class Snowman : MonoBehaviour {
     }
     public void TakeDamage(int mDamage)
     {
-        // insert code to show the smack screen
+        FoomObj.SetActive(true);
         SnowmanHealth -= mDamage;
     }
 }

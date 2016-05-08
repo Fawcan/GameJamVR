@@ -11,6 +11,7 @@ GameObject:
   - 198: {fileID: 19866108}
   - 199: {fileID: 19921236}
   - 82: {fileID: 8220606}
+  - 114: {fileID: 11400796}
   m_Layer: 0
   m_Name: SnowballPuff
   m_TagString: Untagged
@@ -104,6 +105,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &11400796
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d862ef8f66f00af46b124d84cd582880, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Timer: 2
 --- !u!198 &19866108
 ParticleSystem:
   m_ObjectHideFlags: 1

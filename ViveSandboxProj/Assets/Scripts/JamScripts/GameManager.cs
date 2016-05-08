@@ -51,22 +51,19 @@ public class GameManager : MonoBehaviour
                 mNewWave.SetActive(true);
             }
         }
-        else
-        {
-            mNewWave.SetActive(false);
-        }
+      
 
 
 	}
 
     public void NewWave()
     {
+        mNewWave.SetActive(false);
         mWaveNr += 1;
         mSpawner.EnemiesToSpawn += 8;
         mSpawner.SpawnsLeft = mSpawner.EnemiesToSpawn;
+            
+        BetweenWaves = false;
 
-        mEnemiesLeft = mSpawner.EnemiesToSpawn;
-
-        BetweenWaves =  false;
     }
 }

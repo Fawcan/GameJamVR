@@ -94,7 +94,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 166356}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.473465, y: 0, z: 7.143631}
+  m_LocalPosition: {x: -14.747208, y: 0, z: 3.7714233}
   m_LocalScale: {x: 0.49887258, y: 0.49887258, z: 0.49887258}
   m_Children:
   - {fileID: 486216}
@@ -260,7 +260,7 @@ MonoBehaviour:
   mSnowman: {fileID: 0}
   mSnowmanInRange: 0
   mDamageCD: 5
-  ashpile: {fileID: 0}
+  ashpile: {fileID: 199092, guid: 311d3ec8841ff474da09d4950087c4d0, type: 2}
 --- !u!114 &11427426
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -285,6 +285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mAttackTimer: 5
   mSnowman: {fileID: 0}
+  mThisEnemy: {fileID: 0}
 --- !u!135 &13591442
 SphereCollider:
   m_ObjectHideFlags: 1
